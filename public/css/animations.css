@@ -1,0 +1,44 @@
+
+/* Styles */
+
+.bg-main{
+    position: absolute;
+    animation-duration: 300ms;
+}
+
+#overlay{
+
+    animation-duration: 1s;
+    animation-delay: 100ms;
+}
+
+.government{
+    animation-duration: 1s;
+    animation-delay: 100ms;
+
+}
+
+.explore-button{
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.healthcare{
+
+}
+
+.bg-gov{
+    animation-duration: 300ms;
+    animation-delay: 100ms;
+}
+
+.home-button-right{
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.home-button-left{
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+

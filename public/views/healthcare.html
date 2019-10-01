@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare</title>
+    <link type="text/css" rel="stylesheet" href="../css/app.css" />
+    <link type="text/css" rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/animations.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="animated slideInRight bg-gov" id="content">
+            <div class="pointer">
+                <a class="animated pure-button pointer-1" onclick="jump('.pointer-1')">Option 1</a>
+                <a class="animated pure-button pointer-2" onclick="jump('.pointer-2')">Option 2</a>
+            </div>
+            <script type="text/javascript">
+
+                let jump = function (pointer) {
+
+                    animateCSS(pointer, 'bounce');
+                }
+
+                let backHome = function () {
+                    const content = document.getElementById('content');
+                    content.className = 'bg-gov';
+                    animateCSS('.bg-gov', 'slideOutRight', () => {window.location.href = '/';});
+
+
+                }
+            </script>
+            <a class="animated fadeInRight pure-button home-button-left" onclick="backHome()"><img src="../assets/arrowL.png"></a>
+            <figure class="fit-healthcare-bg">
+                <img src="../assets/hc_bg.png">
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+We’d like to land on the “Entry” screen when we launch the webpage. If we click on the Government tile,
+the right side of the screen should slide off to the right, and reveal the full background image as seen in “Gov_1”.
+From there, if we select “Explore”, we’d like the option menu in “Gov_2” to appear. None of those options are selectable in this demo.
+If we choose the arrow in the top right corner of the Gov screen, the right panel returns and we see the Entry screen again.
+Selecting the Healthcare tile brings us to the “Health” screen by sliding the left panel off the left side of the screen and
+revealing the Healthcare background. There are two options on the Healthcare screen, but neither are selectable in this demo.
+The arrow in the top left corner of Healthcare returns us to the Entry screen.

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Government</title>
+    <link type="text/css" rel="stylesheet" href="../css/app.css" />
+    <link type="text/css" rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/animations.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="animated slideInLeft bg-gov" id="content">
+            <a class="animated fadeInRight pure-button home-button-right" onclick="backHome()"><img src="../assets/arrowR.png"></a>
+            <div class="explore" id="explore">
+                <a class="animated fadeInLeft pure-button explore-button" onclick="showOptions()">Explore</a>
+            </div>
+            <figure class="fit-gov-bg">
+                <img src="../assets/gov_bg.png">
+            </figure>
+            <script type="text/javascript">
+                let showOptions = function () {
+                    let element = document.getElementById('explore');
+
+                    animateCSS('.explore', 'fadeOutLeft', () => {element.style.display = 'none'});
+
+                    const div = document.createElement('div');
+                    div.className = 'animated fadeInDown options';
+                    div.id = 'options';
+
+                    div.innerHTML = `
+                    <ul class="options-list">
+                        <a class="pure-button">Option 1</a>
+                        <br>
+                        <a class="pure-button">Option 2</a>
+                        <br>
+                        <a class="pure-button">Option 3</a>
+                        <br>
+                        <a class="pure-button">Option 4</a>
+                    </ul>`;
+
+                    document.getElementById('content').appendChild(div);
+                };
+
+
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    const modal = document.getElementById('options');
+                    const explore = document.getElementById('explore');
+
+                    if (event.target == modal) {
+
+                        animateCSS('.options', 'fadeOutDown', () => {
+                            modal.remove();
+                        });
+                        explore.style.display = 'block';
+                        animateCSS('.explore', 'fadeInLeft');
+                    }
+                };
+
+                let backHome = function () {
+                    const content = document.getElementById('content');
+                    content.className = 'bg-gov';
+                    animateCSS('.bg-gov', 'slideOutLeft', () => {window.location.href = '/';});
+
+
+                }
+
+            </script>
+
+        </div>
+    </div>
+
+</body>
+</html>

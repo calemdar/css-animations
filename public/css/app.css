@@ -1,0 +1,305 @@
+html {
+	font-family: sans-serif;
+}
+
+
+:root {
+	--orange: #FFB53C;
+	--blue: #AAD2FF;
+	--red: #AD3F3D;
+	--gray: #848F9C;
+	--white: #FFFFFF;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+#overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+#section{
+	background-color: var(--gray);
+}
+
+#entry{
+	width: 100%;
+	height: 100%;
+}
+
+#gov{
+	width:100%; /*container-width*/
+	height:100%;
+	overflow: hidden; /*hide bounds of image */
+	margin:0; /*reset margin of figure tag*/
+}
+
+#med{
+	width:100%; /*container-width*/
+	height:100%;
+	overflow: hidden; /*hide bounds of image */
+	margin:0; /*reset margin of figure tag*/
+}
+
+#gov img{
+	/* crop image */
+	display:block;
+	margin:0 -40%;
+	width:177.777%;
+	height: 120%;
+}
+
+#med img{
+	/* crop image */
+	display:block;
+	margin:0 -40% -3.6%;
+	width:177.777%;
+	height: 120%;
+}
+
+.pure-u-1-4{
+	opacity: 1;
+	height: 100%;
+}
+
+.menu{
+	height: 150px;
+	width: 100%;
+	margin-top: 150px;
+	opacity: 0.8;
+
+}
+
+.government{
+	box-shadow: 0 5px 10px 5px;
+	position: relative;
+	border-radius: 10px;
+
+}
+
+.government a{
+	position: absolute;
+	background: var(--gray);
+	width: 100%;
+	height: 100%;
+	line-height: 400%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.9em;
+}
+
+.government a:hover{
+	border-radius: 5px;
+	background: var(--blue);
+
+}
+
+.gov-icon{
+	position: absolute;
+	margin-left: 85%;
+	margin-top: 5%;
+
+}
+
+.left-arrow{
+	position: absolute;
+	margin-top: 14%;
+}
+
+.healthcare{
+	box-shadow: 0 5px 10px 5px;
+	position: relative;
+	border-radius: 10px;
+
+}
+
+.healthcare a{
+	position: absolute;
+	background: var(--gray);
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	line-height: 400%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.9em;
+
+}
+
+.healthcare a:hover{
+	border-radius: 5px;
+	background: var(--blue);
+
+}
+
+.health-icon{
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.right-arrow{
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 85%;
+}
+
+.title{
+	margin: 0 30px 0 30px;
+	background: var(--white);
+	border-radius: 5px;
+	box-shadow: 0 5px 10px 5px;
+}
+
+.title p{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.9em;
+}
+
+.bg-gov{
+    position: absolute;
+}
+
+.fit-gov-bg{
+    width:100%; /*container-width*/
+    height:100%;
+    overflow: hidden; /*hide bounds of image */
+    margin:0; /*reset margin of figure tag*/
+}
+
+.fit-healthcare-bg img{
+    /* crop image */
+    width: 100%;
+    height: 100%;
+    margin-top: -8% ;
+}
+
+.fit-healthcare-bg{
+    width:100%; /*container-width*/
+    height:100%;
+    overflow: hidden; /*hide bounds of image */
+    margin:0; /*reset margin of figure tag*/
+}
+
+.fit-gov-bg img{
+    /* crop image */
+    width: 100%;
+    height: 100%;
+    margin-top: -8% ;
+}
+
+.home-button-right{
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 2%;
+    height: 15%;
+    width: 10%;
+    box-shadow: 0 5px 10px 5px;
+}
+.home-button-right img{
+    margin-top: 20%;
+}
+
+.home-button-left{
+    position: absolute;
+    margin-top: 2%;
+    height: 15%;
+    width: 10%;
+    box-shadow: 0 5px 10px 5px;
+}
+.home-button-left img{
+    margin-top: 20%;
+}
+
+.bg-gov a{
+    background: var(--gray);
+}
+
+.explore{
+    margin-top: 40%;
+    height: 15%;
+    width: 20%;
+    position: absolute;
+
+}
+
+.explore a{
+
+    height: 100%;
+    width: 100%;
+    line-height: 250%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2em;
+    box-shadow: 0 5px 10px 5px;
+
+}
+
+.pointer{
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.pointer a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+.pointer-1{
+    margin-left: 30%;
+    width: 10%;
+    height: 5%;
+    box-shadow: 0 5px 10px 5px;
+}
+
+.pointer-2{
+    margin-left: 55%;
+    margin-top: 7%;
+    width: 10%;
+    height: 5%;
+    box-shadow: 0 5px 10px 5px;
+}
+
+.options{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0.4);
+    z-index:9999;
+    animation-duration: 500ms;
+    animation-delay: 0ms;
+}
+
+.options-list{
+    margin: auto;
+    padding: 0;
+    background: var(--gray);
+    width: 35%;
+    height: 50%;
+    box-shadow: 0 5px 10px 5px;
+}
+
+.options-list a{
+    line-height: 200%;
+    width: 100%;
+    height: 25%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+
+}
